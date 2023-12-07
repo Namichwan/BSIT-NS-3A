@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body {
+  background: url(we.webp);
+  background: cover;
+  background-repeat: no-repeat;
+  justify-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.name {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
   color: white;
+  background: linear-gradient(135deg, rgba(15, 152, 210, 0));
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10 px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1 px 3px rgba(155, 52, 192, 0);
+  float: left;
 }
 
-.App-link {
-  color: #61dafb;
+.title-1 {
+  text-align: center;
+  font-family: Brush Script MT;
+  font-size: 5rem;
+  color: red;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  background: url(bg.png);
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  margin-top: 5rem;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8pc);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 4px solid rgba(46, 46, 46, 0.268);
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-1:hover {
+  background: url(bg.png);
+  font-family: Brush Script MT;
+  color: blue;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(64, 64, 64, 0.1);
+
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8pc);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 3px solid rgba(46, 46, 46, 0.268);
 }
